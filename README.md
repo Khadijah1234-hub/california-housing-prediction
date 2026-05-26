@@ -106,7 +106,7 @@ Three models were trained and evaluated on the same test set:
 
 ---
 
-## ⚙️ Hyperparameter Tuning
+##  Hyperparameter Tuning
 
 Used `RandomizedSearchCV` with 5-fold cross-validation to find optimal parameters:
 
@@ -248,6 +248,6 @@ predictions = model.predict(new_data_scaled)
 
 ---
 
-##  Author Ilyas Khadijah
+##  Author: Ilyas Khadijah
 
 Built as a complete end-to-end ML project covering EDA, feature engineering, model selection, hyperparameter tuning, and overfitting detection.
