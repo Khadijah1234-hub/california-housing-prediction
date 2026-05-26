@@ -1,10 +1,10 @@
-# 🏠 California Housing Price Prediction
+#  California Housing Price Prediction
 
 > A complete end-to-end Machine Learning pipeline to predict **Median Income** of California housing blocks using the classic California Housing dataset.
 
 ---
 
-## 📌 Problem Statement
+##  Problem Statement
 
 Housing affordability and income distribution are critical factors in real estate analysis and urban planning. This project builds a regression model to **predict the median income (`MedInc`) of a California housing block** based on housing and demographic features.
 
@@ -15,7 +15,7 @@ Accurately predicting median income helps:
 
 ---
 
-## 📂 Dataset Description
+##  Dataset Description
 
 **Source:** `sklearn.datasets.fetch_california_housing` (derived from the 1990 U.S. Census)
 
@@ -39,7 +39,7 @@ Accurately predicting median income helps:
 
 ---
 
-## 🔍 Approach
+##  Approach
 
 The project follows a structured ML pipeline:
 
@@ -87,7 +87,7 @@ X_test_scaled = pd.DataFrame(scaler.transform(X_test), columns=x.columns)
 
 ---
 
-## 🤖 Model Comparison
+##  Model Comparison
 
 Three models were trained and evaluated on the same test set:
 
@@ -146,7 +146,7 @@ better_model = RandomForestRegressor(
 
 ---
 
-## 📊 Results
+##  Results
 
 ### Final Model Performance
 
@@ -179,7 +179,7 @@ The gap reduced from **0.15 → 0.07**, indicating the model now generalizes sig
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 | Tool | Purpose |
 |------|---------|
@@ -193,7 +193,7 @@ The gap reduced from **0.15 → 0.07**, indicating the model now generalizes sig
 
 ---
 
-## 🚀 How to Run
+##  How to Run
 
 ```bash
 # 1. Clone the repository
@@ -209,7 +209,7 @@ jupyter notebook Untitled7.ipynb
 
 ---
 
-## 💾 Saved Artifacts
+##  Saved Artifacts
 
 ```
 best_model.pkl   ← trained Random Forest model
@@ -229,7 +229,7 @@ predictions = model.predict(new_data_scaled)
 
 ---
 
-## 📈 Key Takeaways
+##  Key Takeaways
 
 - Feature engineering was the **biggest performance driver** — `bedroom_ratio` alone explained 72% of model decisions
 - Random Forest outperformed both Linear Regression (+11% R²) and Gradient Boosting
@@ -238,7 +238,7 @@ predictions = model.predict(new_data_scaled)
 
 ---
 
-## 🔮 Future Improvements
+##  Future Improvements
 
 - Apply log transformation to highly skewed features (AveOccup, AveRooms)
 - Tune Gradient Boosting — it has potential to outperform Random Forest with proper tuning
@@ -248,6 +248,6 @@ predictions = model.predict(new_data_scaled)
 
 ---
 
-## 👤 Author
+##  Author Ilyas Khadijah
 
 Built as a complete end-to-end ML project covering EDA, feature engineering, model selection, hyperparameter tuning, and overfitting detection.
